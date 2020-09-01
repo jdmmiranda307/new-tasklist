@@ -22,7 +22,6 @@ class TaskViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         user = self.request.user
         queryset = Task.objects.all().filter(user=user).order_by('-created_at')
-        queryset = Task.objects.all().order_by('-created_at')
         return queryset
 
     def create(self, request):
