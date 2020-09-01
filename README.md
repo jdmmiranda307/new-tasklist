@@ -9,12 +9,14 @@ Em seguida, você deverá criar um superuser rodando, dentro da pasta do projeto
 
 ### Autenticação e criação de usuario
 Para autenticar seu usuário na aplicação, deverá ser realizado um `POST` no endpoint `/api/token/` com o seguinte dict:
+
     {
         "username": <seu usuario criado anteriormente>,
         "password": <sua senha criada anteriormente>
     }
 
 Foi adicionada também uma API para criar um usuário, ela fica em `/users/` e recebe, em seu dict, as informações de username e password
+
     {
         "username": <seu usuario>,
         "password": <sua senha>
@@ -24,12 +26,14 @@ Para realizar todas as funções da aplicação você deverá estar autenticado 
 ### Status
 Para criação, edição, visualização e exclusão de Status, utilizase os endpoints de `/status/` e `/status/<pk-status>`
 Sendo que para criar um novo status, você deverá mandar o dict contendo:
+
     {
         "description": "<status>"
     }
 
 ### Task
 As funções para uma task estão em `/tasks/` e `/tasks/<pk-task>`. Para criar uma task você passará um dicionário como o seguinte em uma requisição POST:
+
     {
         "title": "<title>",
         "description": "<description>"
@@ -38,6 +42,7 @@ Ele automaticamente vai para o status_id = 1 (pelo comando load_status será o "
 
 Para alterar uma task, é necessária uma requisição do tipo PATCH passando somente os dados que serão alterados.
 Como por exemplo:
+
     {
         "status": <id-status>
     }
