@@ -26,7 +26,7 @@ SECRET_KEY = 'nwct8#)m#c=(q%!=&)yxr*t0rf)e0-qfup(uc*5h7-&gt7ri-9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['new-tasklist-evoe.herokuapp.com']
 
 
 # Application definition
