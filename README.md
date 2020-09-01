@@ -48,3 +48,12 @@ Como por exemplo:
     }
 
 Exclusão é esperada uma request do tipo DELETE, e listagem e detail são no GET.
+
+## Deploy
+Foi feito o deploy da aplicação no Heroku (https://new-tasklist-evoe.herokuapp.com/) e foram criados os seguintes usuários para teste:
+
+username: userteste
+password: password123
+
+username: userteste2
+password: password123
